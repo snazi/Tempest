@@ -14,3 +14,16 @@ services:
   
   redis:
     image: redis:alpine
+
+  frontend:
+    build: 
+      context: ./frontend
+      dockerfile: Dockerfile
+    container_name: tempest-frontend
+    ports:
+      - 3000:3000
+    volumes:
+      - ./frontend:/code
+      - ./frontend/node_modules:/code/node_modules
+    stdin_open: true
+    command: npm run start
