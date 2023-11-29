@@ -1,16 +1,15 @@
 {
   "files": {
-    "main.css": "/Tempest/static/css/main.f855e6bc.css",
-    "main.js": "/Tempest/static/js/main.0df7315d.js",
+    "main.css": "/Tempest/static/css/main.d3916788.css",
+    "main.js": "/Tempest/static/js/main.ad6ffc4a.js",
     "static/js/787.9e9f4ffd.chunk.js": "/Tempest/static/js/787.9e9f4ffd.chunk.js",
-    "static/media/temp-pic.png": "/Tempest/static/media/temp-pic.dff1d53bc28b0fdfc8a9.png",
     "index.html": "/Tempest/index.html",
-    "main.f855e6bc.css.map": "/Tempest/static/css/main.f855e6bc.css.map",
-    "main.0df7315d.js.map": "/Tempest/static/js/main.0df7315d.js.map",
+    "main.d3916788.css.map": "/Tempest/static/css/main.d3916788.css.map",
+    "main.ad6ffc4a.js.map": "/Tempest/static/js/main.ad6ffc4a.js.map",
     "787.9e9f4ffd.chunk.js.map": "/Tempest/static/js/787.9e9f4ffd.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.f855e6bc.css",
-    "static/js/main.0df7315d.js"
+    "static/css/main.d3916788.css",
+    "static/js/main.ad6ffc4a.js"
   ]
 }
