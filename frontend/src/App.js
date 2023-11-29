@@ -1,25 +1,29 @@
-// import logo from './logo.svg';
-import './App.css';
-import possibleLogo from './temp-pic.png'
-function App() {
+// src/App.js
+import React from 'react';
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import Header from './components/Header';
+import LandingPage from './components/LandingPage';
+import AboutUs from './components/AboutUs';
+import Player from './components/Player';
+import { QueryClient, QueryClientProvider } from 'react-query';
+
+const queryClient = new QueryClient();
+
+const App = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={possibleLogo} className="App-logo" alt="logo" />
-        <p>
-          My idol
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <QueryClientProvider client={queryClient}>
+      <Router>
+        <div className="h-screen">
+          <Header />
+          <Routes>
+            <Route path="/about" element={<AboutUs />} />
+            <Route path="/player" element={<Player />} />
+            <Route path="/" element={<LandingPage />} />
+          </Routes>
+        </div>
+      </Router>
+    </QueryClientProvider>
   );
-}
+};
 
 export default App;
